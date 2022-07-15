@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html  lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador-Challenge 1</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet"> 
+        <link href="reset.css">
+    </head>
+    <body>
+        <header>
+            <img class="A.alura" src="imagenes/Vector.jpg">
+
+        </header>
+        
+        
+         <section class="imgLupa">
+           
+            <img class="lupa" src="imagenes/persona-lupa.jpg" id="munieco"
+            onmouseover="this.src=`imagenes/persona-lupa2.jpg`"
+            onmouseout="this.src=`imagenes/persona-lupa.jpg`">
+
+            <label id="in_texto1" class="textoNoEncontrado">Ningun mensaje fue encontrado</label>
+            <label id="in_texto2" class="ingreseTexto">Ingresa el texto que quieres encriptar o desencriptar </label>
+
+            <button id="copiar" onclick="copiar()" class="botonCopiar">Copiar Texto</button>
+            <textarea class="textoEncriptado" id="encriptado" ></textarea>
+         </section>
+
+         <section class="section-tex-entrada">
+            <div class="encriptador_mensaje">
+              <input type="text" id="texto-entrada" class="texto-entrada" placeholder="Ingrese un texto aqui">
+            </div>
+          </section>
+
+          <div class="div-boton" >
+            <p class="adevertencia"> ⚠ Ingrese solo letras minusculas y sin acentos</p>
+            <button type="button" onclick="btnencriptar()" class="boton1" id="encriptar">Encriptar</button>
+            <button type="button" onclick="btndesencriptar()" class="boton2" id= "desencriptar">Desencriptar</button>
+         </div>
+            <script src="encriptador.js"></script>
+        
+    </body>
+
+</html>
